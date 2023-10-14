@@ -212,7 +212,15 @@ function App() {
             optimizing the storage, movement, and tracking of goods within a
             warehouse or distribution center.
           </p>
-          <p>Link to the Github:</p>
+          <button
+            onClick={() => {
+              window.open(
+                "https://github.com/VinskyStrauss/warehouse-management-system"
+              );
+            }}
+          >
+            Link to the Github
+          </button>
           <div class="project-carousel">
             <button onClick={prevImage} className="prev-button">
               &#9665;
@@ -234,6 +242,13 @@ function App() {
             track their orders and receive them at their doorstep, and also help
             the restaurant to manage their orders.
           </p>
+          <button
+            onClick={() => {
+              window.open("https://github.com/VinskyStrauss/PizzaService");
+            }}
+          >
+            Link to the Github
+          </button>
           <div class="project-carousel">
             <button onClick={prevImage2} className="prev-button">
               &#9665;
