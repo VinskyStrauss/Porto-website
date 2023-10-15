@@ -224,7 +224,7 @@ p {
 
   .carousel-image img {
     margin-top: 1.5rem;
-    max-width: 20rem;
+    max-width: 15rem;
     transition: transform 0.3s ease-in-out; /* Add ease-in-out timing function */
     transform: scale(1); /* Start with the default scale of 1 */
     border: 1px solid #9e9c9c;
