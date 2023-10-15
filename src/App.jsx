@@ -18,8 +18,18 @@ function App() {
     "Screenshot 2023-10-14 191547.png",
   ];
 
+  const hciImages = [
+    "Screenshot_20231015-171947.jpg",
+    "Screenshot_20231015-171955.jpg",
+    "Screenshot_20231015-172014.jpg",
+    "Screenshot_20231015-172037.jpg",
+    "Screenshot_20231015-172043.jpg",
+    "Screenshot_20231015-172030.jpg",
+  ];
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentPizzaImageIndex, setCurrentPizzaImageIndex] = useState(0);
+  const [currentHciImageIndex, setCurrentHciImageIndex] = useState(0);
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -36,6 +46,16 @@ function App() {
 
   const prevImage2 = () => {
     setCurrentPizzaImageIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  };
+
+  const nextImage3 = () => {
+    setCurrentHciImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevImage3 = () => {
+    setCurrentHciImageIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
@@ -67,8 +87,16 @@ function App() {
           Contact Me
         </a>
       </div>
-      <div className="intro" id="intro">
+      <div class="intro" id="intro">
         <img class="profile-pic" src="20230526_203550.jpg" alt="My Image" />
+        <p>
+          Hello and welcome to my portfolio website! I'm Vinsky Strauss
+          TanHanSen, originally from Jakarta, Indonesia, and currently residing
+          in Germany for my studies. With a strong passion for web and mobile
+          application development, I'm on a journey to explore and create
+          innovative solutions. Through my experiences and projects, I aim to
+          bring my ideas to life and share them with the world.
+        </p>
         <div class="logos">
           <img
             class="logo"
@@ -95,14 +123,6 @@ function App() {
             }}
           />
         </div>
-        <p>
-          Hello and welcome to my portfolio website! I'm Vinsky Strauss
-          TanHanSen, originally from Jakarta, Indonesia, and currently residing
-          in Germany for my studies. With a strong passion for web and mobile
-          application development, I'm on a journey to explore and create
-          innovative solutions. Through my experiences and projects, I aim to
-          bring my ideas to life and share them with the world.
-        </p>
       </div>
 
       <div class="about" id="about">
@@ -257,6 +277,42 @@ function App() {
               <img src={pizzaImages[currentPizzaImageIndex]} alt="WMS" />
             </div>
             <button onClick={nextImage2} className="next-button">
+              &#9655;
+            </button>
+          </div>
+        </div>
+
+        <div class="hci">
+          <h2>O'Click-nic</h2>
+          <p>
+            O'Click-nic, short for "Online Clickable Clinic," is a virtual
+            healthcare platform designed to provide accessible and convenient
+            medical services. This innovative platform leverages the power of
+            technology to connect healthcare professionals with patients,
+            offering a wide range of medical services from the comfort of one's
+            home. Doctors can easily monitor their patients' health and provide
+            treatment recommendations, while patients can conveniently receive
+            medical advice and prescriptions.
+          </p>
+          <button
+            onClick={() => {
+              window.open("https://github.com/VinskyStrauss/OClickNic");
+            }}
+          >
+            Link to the Github
+          </button>
+          <div class="project-carousel">
+            <button onClick={prevImage3} className="prev-button">
+              &#9665;
+            </button>
+            <div className="carousel-image">
+              <img
+                class="hciImg"
+                src={hciImages[currentHciImageIndex]}
+                alt="WMS"
+              />
+            </div>
+            <button onClick={nextImage3} className="next-button">
               &#9655;
             </button>
           </div>

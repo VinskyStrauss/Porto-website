@@ -122,6 +122,16 @@ a {
   width: 45rem;
   transition: transform 0.3s ease-in-out; /* Add ease-in-out timing function */
   transform: scale(1); /* Start with the default scale of 1 */
+  border: 1px solid #9e9c9c; 
+}
+
+.carousel-image .hciImg{
+  margin-top: 1.5rem;
+  height: 30rem;
+  width: 10em;
+  transition: transform 0.3s ease-in-out; /* Add ease-in-out timing function */
+  transform: scale(1); /* Start with the default scale of 1 */
+  border: 1px solid #9e9c9c; 
 }
 
 .carousel-image img:hover {
@@ -182,4 +192,11 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
+}
+
+p{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
