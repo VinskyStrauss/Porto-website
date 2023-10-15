@@ -26,7 +26,7 @@
 }
 
 .intro {
-  height: 100vh;
+  min-height: 100vh;
   text-align: justify;
   font-size: 1.5rem;
   color: #000000;
@@ -97,7 +97,7 @@ a {
 }
 
 .projects {
-  height: 100vh;
+  min-height: 100vh;
   text-align: left;
   font-size: 1.5rem;
   color: #000000;
@@ -209,6 +209,11 @@ p {
 @media screen and (max-width: 750px) {
   .div {
     min-height: auto;
+  }
+
+  a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
   .logos {
