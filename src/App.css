@@ -180,6 +180,8 @@ input[type="text"] {
 
 textarea {
   width: 100%;
+  min-width: 50%;
+  max-width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -192,6 +194,11 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
+  
+}
+
+.send{
+  width: 100%;
 }
 
 p{

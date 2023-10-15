@@ -326,7 +326,8 @@ function App() {
           <input type="text" placeholder="Email" />
           <p>Message</p>
           <textarea placeholder="Message" />
-          <button>Send</button>
+          <p>or alternatively: vinsky.strauss@gmail.com</p>
+          <button class="send">Send</button>
         </div>
       </div>
     </div>
