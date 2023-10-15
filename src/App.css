@@ -180,6 +180,7 @@ input[type="text"] {
 textarea {
   width: 100%;
   min-width: 50%;
+  min-height: 10%;
   max-width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
