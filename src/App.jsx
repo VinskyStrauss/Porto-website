@@ -420,7 +420,9 @@ function App() {
               rows="4"
               required
             ></textarea>
-            <button type="submit">Send</button>
+            <button class="submit" type="submit">
+              Send
+            </button>
           </form>
         </div>
       </div>
