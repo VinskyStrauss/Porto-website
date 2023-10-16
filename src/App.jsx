@@ -123,6 +123,13 @@ function App() {
             }}
           />
         </div>
+        <a
+          href="https://drive.google.com/file/d/13ipPZ9Oyj8Fel3JiWt3lMV0wt9J3ulVw/view?usp=sharing"
+          download
+          target="_blank"
+        >
+          <button>Here's my CV</button>
+        </a>
       </div>
 
       <div class="about" id="about">
