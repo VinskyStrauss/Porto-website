@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import emailjs from "emailjs-com";
 
 function App() {
   const images = [
@@ -30,6 +31,20 @@ function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentPizzaImageIndex, setCurrentPizzaImageIndex] = useState(0);
   const [currentHciImageIndex, setCurrentHciImageIndex] = useState(0);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -70,6 +85,53 @@ function App() {
         behavior: "smooth", // This triggers smooth scrolling
       });
     }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    //send the message to my email
+    if (
+      formData.name === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_name: "Vinsky Strauss",
+    };
+    console.log(templateParams);
+    emailjs
+      .send(
+        "vinskygmail-service",
+        "template_email",
+        templateParams,
+        "w9YynDbPCo6GrLKXM"
+      )
+      .then((response) => {
+        if (response.status !== 200) {
+          throw "";
+        }
+        alert("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch(() => {
+        alert("Message failed to send.");
+      });
   };
   return (
     <div>
@@ -327,14 +389,39 @@ function App() {
 
         <div class="contact" id="contact">
           <h2>Contact Me</h2>
-          <p>Name</p>
-          <input type="text" placeholder="Name" />
-          <p>Email</p>
-          <input type="text" placeholder="Email" />
-          <p>Message</p>
-          <textarea placeholder="Message" />
-          <p>or alternatively: vinsky.strauss@gmail.com</p>
-          <button class="send">Send</button>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="name"
+              required
+            />
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="email"
+              required
+            />
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </div>
