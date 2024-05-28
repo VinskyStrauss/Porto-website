@@ -149,8 +149,8 @@ function App() {
           Contact Me
         </a>
       </div>
-      <div class="intro" id="intro">
-        <img class="profile-pic" src="20230526_203550.jpg" alt="My Image" />
+      <div className="intro" id="intro">
+        <img className="profile-pic" src="20230526_203550.jpg" alt="My Image" />
         <p>
           Hello and welcome to my portfolio website! I'm Vinsky Strauss
           TanHanSen, originally from Jakarta, Indonesia, and currently residing
@@ -159,9 +159,9 @@ function App() {
           innovative solutions. Through my experiences and projects, I aim to
           bring my ideas to life and share them with the world.
         </p>
-        <div class="logos">
+        <div className="logos">
           <img
-            class="logo"
+            className="logo"
             src="https://img.icons8.com/color/48/000000/linkedin.png"
             alt="linkedin"
             onClick={() =>
@@ -171,13 +171,13 @@ function App() {
             }
           />
           <img
-            class="logo"
+            className="logo"
             src="https://img.icons8.com/fluent/48/000000/github.png"
             alt="github"
             onClick={() => window.open("https://github.com/VinskyStrauss")}
           />
           <img
-            class="logo"
+            className="logo"
             src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
             alt="facebook"
             onClick={() => {
@@ -189,15 +189,16 @@ function App() {
           href="https://drive.google.com/file/d/1i_smhHb1H-FngUNaX9Vjb_m3ei429n6e/view?usp=sharing"
           download
           target="_blank"
+          rel="noreferrer"
         >
           <button>Here's my CV</button>
         </a>
       </div>
 
-      <div class="about" id="about">
+      <div className="about" id="about">
         <div>
           <h1>About Me</h1>
-          <p class="center-paragraph">
+          <p className="center-paragraph">
             I'm a computer science student currently in my 6th semester,
             passionate about all things technology. Beyond the structured world
             of academia, I love to explore and create. During this semester
@@ -208,81 +209,81 @@ function App() {
             experiences and projects with you.
           </p>
         </div>
-        <div class="skills">
+        <div className="skills">
           <h3>Things i'm familiar with</h3>
-          <div class="logos">
+          <div className="logos">
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/html-5--v1.png"
               alt="html"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/css3.png"
               alt="css"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/javascript--v1.png"
               alt="javascript"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
               alt="c++"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/react-native.png"
               alt="react"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"
               alt="vscode"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/git.png"
               alt="git"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/firebase.png"
               alt="firebase"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/android-studio--v1.png"
               alt="android"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/docker.png"
               alt="docker"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/python--v1.png"
               alt="python"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
               alt="java"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg"
               alt="qt"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/postgreesql.png"
               alt="postgresql"
             />
             <img
-              class="logo2"
+              className="logo2"
               src="https://img.icons8.com/color/48/000000/typescript.png"
               alt="typescript"
             />
@@ -290,9 +291,9 @@ function App() {
         </div>
       </div>
 
-      <div class="projects" id="projects">
+      <div className="projects" id="projects">
         <h1>Projects</h1>
-        <div class="WMS">
+        <div className="WMS">
           <h2>Warehouse Management System</h2>
           <p>
             A Warehouse Management System (WMS) is a software application or
@@ -310,7 +311,7 @@ function App() {
           >
             Link to the Github
           </button>
-          <div class="project-carousel">
+          <div className="project-carousel">
             <button onClick={prevImage} className="prev-button">
               &#9665;
             </button>
@@ -322,7 +323,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div class="pizza">
+        <div className="pizza">
           <h2>Pizza Service</h2>
           <p>
             A web pizza service refers to an online platform or website that
@@ -338,7 +339,7 @@ function App() {
           >
             Link to the Github
           </button>
-          <div class="project-carousel">
+          <div className="project-carousel">
             <button onClick={prevImage2} className="prev-button">
               &#9665;
             </button>
@@ -351,7 +352,7 @@ function App() {
           </div>
         </div>
 
-        <div class="hci">
+        <div className="hci">
           <h2>O'Click-nic</h2>
           <p>
             O'Click-nic, short for "Online Clickable Clinic," is a virtual
@@ -370,13 +371,13 @@ function App() {
           >
             Link to the Github
           </button>
-          <div class="project-carousel">
+          <div className="project-carousel">
             <button onClick={prevImage3} className="prev-button">
               &#9665;
             </button>
             <div className="carousel-image">
               <img
-                class="hciImg"
+                className="hciImg"
                 src={hciImages[currentHciImageIndex]}
                 alt="WMS"
               />
@@ -387,7 +388,7 @@ function App() {
           </div>
         </div>
 
-        <div class="contact" id="contact">
+        <div className="contact" id="contact">
           <h2>Contact Me</h2>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name:</label>
@@ -420,7 +421,7 @@ function App() {
               rows="4"
               required
             ></textarea>
-            <button class="submit" type="submit">
+            <button className="submit" type="submit">
               Send
             </button>
           </form>
