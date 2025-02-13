@@ -185,14 +185,26 @@ function App() {
             }}
           />
         </div>
-        <a
-          href="https://drive.google.com/file/d/1kSFQAXxCD1GwPLtwAKgkD_KMNEe2Cctz/view?usp=sharing"
-          download
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button>Here's my CV</button>
-        </a>
+        <div className="cvButton">
+          <button
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1kSFQAXxCD1GwPLtwAKgkD_KMNEe2Cctz/view?usp=sharing"
+              );
+            }}
+          >
+            Here is my CV(English)
+          </button>
+          <button
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1sRIYa6nL55_VsM4-BUNECdOTr5k_Pxyl/view?usp=sharing"
+              );
+            }}
+          >
+            Here is my CV(German)
+          </button>
+        </div>
       </div>
 
       <div className="about" id="about">
