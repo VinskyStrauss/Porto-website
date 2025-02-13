@@ -186,7 +186,7 @@ function App() {
           />
         </div>
         <a
-          href="https://drive.google.com/file/d/1i_smhHb1H-FngUNaX9Vjb_m3ei429n6e/view?usp=sharing"
+          href="https://drive.google.com/file/d/1kSFQAXxCD1GwPLtwAKgkD_KMNEe2Cctz/view?usp=sharing"
           download
           target="_blank"
           rel="noreferrer"
@@ -199,14 +199,15 @@ function App() {
         <div>
           <h1>About Me</h1>
           <p className="center-paragraph">
-            I'm a computer science student currently in my 6th semester,
-            passionate about all things technology. Beyond the structured world
-            of academia, I love to explore and create. During this semester
-            breaks, I took the opportunity to channel my passion into a creative
-            endeavor to built my very own website. It was a journey of learning,
-            coding, and problem-solving, which allowed me to apply the knowledge
-            gained in my coursework. Through this website, I hope to share my
-            experiences and projects with you.
+            I recently graduated with a degree in Computer Science, driven by a
+            passion for all things technology. Beyond the structured world of
+            academia, I love to explore and create. During my semester breaks, I
+            took the opportunity to channel my passion into a creative
+            endeavor—building my very own website. It was a journey of learning,
+            coding, and problem-solving, allowing me to apply the knowledge
+            gained throughout my coursework. Through this website, I aim to
+            share my experiences, projects, and continuous learning journey with
+            you.
           </p>
         </div>
         <div className="skills">
